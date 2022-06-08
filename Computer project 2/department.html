@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jai Narayan College | DEPARTMENT</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+      </head>
+      <style>
+/*Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    background: rgb(75, 75, 75);
+  }
+
+  /*Nav-bar*/
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/image21.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky .logo,
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  /*Vertical Tabs*/
+
+.tab {
+  margin: 20px auto;
+  margin-left: 35px;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #181818;
+  width: 30%;
+  height: 800px;
+  border-radius: 10px 0 0 10px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #fff;
+  padding: 22px 16px;
+  width: 90%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 5%;
+  border-radius: 4px;
+}
+
+.tab button:hover {
+  background-color: #fff;
+  color: rgb(182, 146, 146);
+}
+
+.tab button.active {
+  background-color: black;
+}
+
+.tabcontent {
+  margin: 20px auto;
+  margin-right: 20px;
+  float: left;
+  padding: 50px 25px;
+  background-color: rgb(211, 203, 203);
+  border: 1px solid #ccc;
+  width: 65%;
+  border-left: none;
+  height: 800px;
+  border-radius: 0 10px 10px 0;
+}
+
+  /*Footer*/
+  .footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    background-color: #181818;
+  }
+
+  .inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+  }
+
+  .inner-footer .logo-container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+  }
+
+  .inner-footer .logo-container img {
+    width: 60px;
+    height: auto;
+
+  }
+
+  .inner-footer .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+
+  .inner-footer .footer-third:last-child {
+    margin-right: 0;
+  }
+
+  .inner-footer .footer-third h1 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inner-footer .footer-third a {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .inner-footer .footer-third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .inner-footer .footer-third span {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+  }
+      </style>
+<body>
+    <!--Navigation-bar-->
+  <header>
+    <a  class="logo">Jai Narayan College</a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="department.html">Department</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </header>
+  <!--Banner-->
+  <section class="banner"></section>
+
+  <!--Vertical Tabs-->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'firstTab')" id="defaultOpen">Maths and Physics</button>
+    <button class="tablinks" onclick="openTab(event, 'secondTab')">Language</button>
+    <button class="tablinks" onclick="openTab(event, 'thirdTab')">Commerce</button>
+    <button class="tablinks" onclick="openTab(event, 'forthTab')">Science</button>
+    <button class="tablinks" onclick="openTab(event, 'fifthTab')">Social Science</button>
+    <button class="tablinks" onclick="openTab(event, 'sixthTab')">Computer Science</button>
+    <button class="tablinks" onclick="openTab(event, 'seventhTab')">Industrial Arts</button>
+    <button class="tablinks" onclick="openTab(event, 'eighthTab')">Home Economics</button>
+    <button class="tablinks" onclick="openTab(event, 'ninethTab')">PEMAC</button>
+  </div>
+  
+  <div id="firstTab" class="tabcontent">
+    <h1>Maths and Physics</h1>
+    <p>The relationship between mathematics and physics has been a subject of study of philosophers, mathematicians and physicists since Antiquity, and more recently also by historians and educators. <br> <br>
+    <h3>Teachers Include:</h3> <br>
+    1. Harmesh Sharma (HOD) <br>
+    2. Rajendra Vishnu Kumar <br>
+    3. Salaineta Sau Daveta <br>
+    4. Ranjani Mudaliar <br>
+    5. Shavneel Prasad <br>
+    6. Mishek Monish Prasad <br>
+    7. Swastika Pillay <br>
+    8. Shivanjali Krishna <br>
+    9. Shivneel Kumar Gosai <br>
+    10. Shimal S Chand<br>
+    </p>
+  </div>
+  
+  <div id="secondTab" class="tabcontent">
+    <h1>Language</h1>
+    <p>A language is a structured system of communication. The structure of a language is its grammar and the free components are its vocabulary. Languages are the primary means of communication of humans, and can be conveyed through speech, sign, or writing. <br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Anne Mausio (HOD) <br>
+      2. Paras ram <br>
+      3. Sharda Kumar <br>
+      4. Shivani Lal <br>
+      5. Rimal R Lata Kumar <br>
+      6. Priyaedarshani L P <br>
+      7. Nileshni Kumar <br>
+      8. Shivanjali Deepshal Kumar <br>
+      9. Inoke Taga <br>
+      10. Kinijoji Tuibuca<br></p> 
+  </div>
+  
+  <div id="thirdTab" class="tabcontent">
+    <h1>Commerce</h1>
+    <p>Commerce is the conduct of trade among economic agents. Generally, commerce refers to the exchange of goods, services, or something of value, between businesses or entities. From a broad perspective, nations are concerned with managing commerce in a way that enhances the well-being of citizens, by providing jobs and producing beneficial goods and services. <br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Kamal Navin Chand<br>
+      2. Ajay Narayan <br>
+      3. Ronald Vikash Chand <br>
+      4. Alvina Dipika Sharma <br>
+      5. Nemani Vodo Rokobuli <br>
+      6. Ateca Batisaresare <br>
+      7. Karuna Mala Prasad <br></p>
+  </div>
+
+  <div id="forthTab" class="tabcontent">
+    <h1>Science</h1>
+    <p>Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe. The earliest roots of science can be traced to Ancient Egypt and Mesopotamia in around 3000 to 1200 BCE. <br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Subhashni C Narayan (HOD)<br>
+      2. Manshika Kumar <br>
+      3. Mere Tawaketolu <br>
+      4. Josua Moko <br>
+      5. Anurekha Kaushilya Prasad <br>
+      6. Elesi Lakeba <br></p>
+  </div>
+
+  <div id="fifthTab" class="tabcontent">
+    <h1>Social Science</h1>
+    <p>Social science is the branch of science devoted to the study of societies and the relationships among individuals within those societies. The term was formerly used to refer to the field of sociology, the original "science of society", established in the 19th century.<br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Pravina Wah (HOD)<br>
+      2. Pooja Priyasna <br>
+      3. Pritika Payal Chand <br></p>
+  </div>
+
+  <div id="sixthTab" class="tabcontent">
+    <h1>Computer Science</h1>
+    <p>Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines to practical disciplines. Computer science is generally considered an area of academic research and distinct from computer programming.<br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Reema Reshmi Mala (HOD)<br>
+      2. Bhartika P chand <br>
+      3. Reshma Reshmika Devi <br>
+      4. llisapeci Vuli Cama <br></p>
+  </div>
+
+  <div id="seventhTab" class="tabcontent">
+    <h1>Industrial Art</h1>
+    <p>Industrial arts is an educational program that features the fabrication of objects in wood or metal using a variety of hand, power, or machine tools. Industrial Arts are commonly referred to as Technology Education.<br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Janesh Adhar (HOD)<br>
+      2. Abdul Rishaad <br>
+      3. Sheetal Lal <br>
+      4. Sumit Chand Sharma <br></p>
+  </div>
+
+  <div id="eighthTab" class="tabcontent">
+    <h1>Home Economics</h1>
+    <p>Home economics, or family and consumer sciences, is a subject concerning human development, personal and family finance, housing and interior design, food science and preparation, nutrition and wellness, textiles and apparel, and consumer issues.<br> <br>
+      <h3>Teachers Include:</h3> <br>
+      1. Sandhya Chand (HOD)<br>
+      2. Renuka Sharma <br></p>
+  </div>
+
+  <div id="ninethTab" class="tabcontent">
+    <h1>PEMAC</h1>
+    <p> <b>Physical education</b>, often abbreviated to Phys Ed. or P.E., is a subject taught in schools around the world. It is usually taught during primary and secondary education, and encourages psychomotor learning by using a play and movement exploration setting to promote health and physical fitness
+      <br>
+     <b>Music</b>, art concerned with combining vocal or instrumental sounds for beauty of form or emotional expression, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony. Both the simple folk song and the complex electronic composition belong to the same activity, music.
+      <br>
+     <b>Arts and crafts</b> describes a wide variety of activities involving making things with one's own hands. Arts and crafts is usually a hobby. Some crafts (art skills) have been practised since preshistoric times, others are more recent inventions.<br> <br>
+     <h3>Teachers Include:</h3> <br>
+     1. Ashish Vinay Chand (HOD)<br>
+     2. Villame Vinau <br></p>
+  </div>
+  
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="inner-footer">
+      <div class="logo-container">
+        <img src="images/logo.png">
+      </div>
+
+      <!--Footer-->
+      <div class="footer-third">
+        <h1></h1>
+      </div>
+
+      <div class="footer-third">
+        <h1>Navigation</h1>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Department</a>
+        <a href="programme.html">Programme</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+
+      <div class="footer-third">
+        <h1>Social Links</h1>
+        <li><a class="pink" href="https://m.facebook.com/profile.php?id=171033039654835"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="pink" href="http://www.education.gov.fj/"><i class="fa fa-book"></i></a></li>
+
+        <span>
+          JAI NARAYAN COLLEGE <br>
+          G.P.O Box 249, Suva <br>
+          161 Rewa Street, Suva <br>
+          Telephone: 3384-916/3381-705 <br>
+          Fax: 3384788 <br>
+          Mobile: 8336693 <br>
+          Email: jncollege@live.com
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--Javascript for Nav-bar-->
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+    function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>

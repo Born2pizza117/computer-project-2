@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jai Narayan College | PROGRAMME</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+      </head>
+      <style>
+/*Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    background: rgb(75, 75, 75);
+  }
+
+  /*Nav-bar*/
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/image21.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky .logo,
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  /*Co-curricular activity*/
+  .container-1 {
+    height: 90%;
+    margin: 50px
+  }
+
+  .activity {
+    border: 2px solid black;
+    background-color: cornsilk;
+    padding: 20px;
+  }
+
+  .activity>h1 {
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+
+  .activity p {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  /*Calendar*/
+  .calendar {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    color: cornsilk;
+  }
+
+  .table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: left;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+  /*Footer*/
+  .footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    background-color: #181818;
+  }
+
+  .inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+  }
+
+  .inner-footer .logo-container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+  }
+
+  .inner-footer .logo-container img {
+    width: 60px;
+    height: auto;
+
+  }
+
+  .inner-footer .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+
+  .inner-footer .footer-third:last-child {
+    margin-right: 0;
+  }
+
+  .inner-footer .footer-third h1 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inner-footer .footer-third a {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .inner-footer .footer-third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .inner-footer .footer-third span {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+  }
+      </style>
+<body>
+    <!--Navigation-bar-->
+  <header>
+    <a  class="logo">Jai Narayan College</a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="department.html">Department</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </header>
+  <!--Banner-->
+  <section class="banner"></section>
+
+  <!--Co-curricular activity-->
+  <div class="container-1">
+    <div class="activity">
+      <h1>Co-curricular activity</h1>
+      <p class="text">
+        Girmit Celebration <br>
+        Prefects Induction <br>
+        Gender Assembly <br>
+        Interhouse <br>
+        UN Model <br>
+        Team Mathematics Competition <br>
+        College Test <br>
+        Sports day <br>
+        MUN <br>
+        Recycle On go 
+      </p>
+    </div>
+  </div>
+
+  <!--Term Calendar-->
+  <h1 class="calendar">Term Calendar</h1>
+  <div class="table-wrapper">
+
+    <table class="fl-table">
+        <thead>
+        <tr>
+          <th>Week / Theme</th>
+          <th>Week's main event</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1. Resourcefulness</td>
+          <td>Orientation Profiling Coverage</td>
+          <td>11th April Orientation Y9 <br> Profiling Y9 Coverage </td>
+          <td>12 Orientation Y10 <br> Profiling Y10 Coverage</td>
+          <td>13 Orientation Y11 <br> Profiling Y11 Coverage</td>
+        </tr>
+        <tr>
+          <td>2. Serenity</td>
+          <td>Coverage Lesson Observation</td>
+          <td>18 Easter Monday</td>
+          <td>19 Coverage Orientation Y12</td>
+          <td>20 Coverage Orientation Y13</td>
+        </tr>
+        <tr>
+          <td>3. Leadership</td>
+          <td>Coverage Prefect Induction Meetings Lesson Observation</td>
+          <td>25 Coverage HOD Meeting</td>
+          <td>26 Coverage</td>
+          <td>27 Coverage Staff Meeting</td>
+        </tr>
+        <tr>
+          <td>4. Self - Motivation</td>
+          <td>Coverage Lesson Observation</td>
+          <td>2nd May Coverage</td>
+          <td>3 Coverage</td>
+          <td>4 Coverage lang Projects</td>
+        </tr>
+        <tr>
+          <td>5. Dedication</td>
+          <td>Coverage</td>
+          <td>9 Coverage</td>
+          <td>10 Coverage</td>
+          <td>11 Coverage Dept Project verification</td>
+        </tr>
+        <tr>
+          <td>6. Perseverance</td>
+          <td>Lesson Observation Coverage</td>
+          <td>15 Coverage</td>
+          <td>17 Coverage</td>
+          <td>18 Coverage</td>
+        </tr>
+        <tr>
+          <td>7. Unity</td>
+          <td>Meeting Coverage Lesson Observation </td>
+          <td>23 Coverage HOD Meeting</td>
+          <td>24 Coverage</td>
+          <td>25 Coverage Staff Meeting</td>
+        </tr>
+        <tr>
+          <td>8. Understanding</td>
+          <td> Coverage</td>
+          <td>30 Coverage</td>
+          <td>31 Coverage</td>
+          <td>1st June Coverage</td>
+        </tr>
+        <tr>
+          <td>9. Steadfastness</td>
+          <td> Coverage Lesson Observation</td>
+          <td>6 Coverage</td>
+          <td>7 Coverage</td>
+          <td>8 Coverage</td>
+        </tr>
+        <tr>
+          <td>10. Generosity</td>
+          <td>Meeting Coverage Lesson Observation</td>
+          <td>13 Coverage HOD Meeting</td>
+          <td>14 Coverage</td>
+          <td>15 Coverage Staff Meeting</td>
+        </tr>
+        <tr>
+          <td>11. Patience</td>
+          <td>Coverage</td>
+          <td>20 Coverage</td>
+          <td>21 Coverage</td>
+          <td>22 Coverage</td>
+        </tr>
+        <tr>
+          <td>12. Resilience</td>
+          <td>Coverage Lesson Observation</td>
+          <td>27 Coverage</td>
+          <td>28 Coverage</td>
+          <td>29 Coverage</td>
+        </tr>
+        <tr>
+          <td>13. Thoughtfulness</td>
+          <td>Meeting Coverage</td>
+          <td>4 HOD Meeting Coverage</td>
+          <td>5 Dept reports Coverage</td>
+          <td>6 Staff Meeting Text book verification coverage</td>
+        </tr>
+       
+        <tbody>
+    </table>
+</div>
+
+<div class="table-wrapper">
+  <table class="fl-table">
+      <thead>
+      <tr>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>14 Profiling Y12 Coverage <br> Social Science / Computer WB to Vp <br> DAR/PAR Due</td>
+        <td>15 Good Friday</td>
+      </tr>
+      <tr>
+        <td>21 Coverage Lang/H/Eco WB</td>
+        <td>22 Coverage Daily Attendance Register (DAR) & Period Attendance Register <br> (PAR) due every week</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>28 Coverage Maths/Phy WB</td>
+        <td>29 Coverage Exercise books verification</td>
+      </tr>
+      <tr>
+        <td>5 Coverage IA/PE WB</td>
+        <td>6 Coverage</td>
+      </tr>
+      <tr>
+        <td>12 Coverage Science WB</td>
+        <td>13 Coverage</td>
+      </tr>
+      <tr>
+        <td>19 Coverage Social Science/Compueter WB to VP</td>
+        <td>20 Coverage Exercise books verification</td>
+      </tr>
+      <tr>
+        <td>26 Coverage Lang/Hec WB</td>
+        <td>27 Coverage</td>
+      </tr>
+      <tr>
+        <td>2 Coverage Maths/Phy WB</td>
+        <td>3 Coverage</td>
+      </tr>
+      <tr>
+        <td>9 Coverage IA/PE WB</td>
+        <td>10 Coverage Exercise book verification</td>
+      </tr>
+      <tr>
+        <td>16 Coverage Science WB</td>
+        <td>17 Coverage</td>
+      </tr>
+      <tr>
+        <td>23 Coverage Maths/Phy WB</td>
+          <td>24 Coverage</td>
+      </tr>
+      <tr>
+        <td>30 Coverage Science WB</td>
+          <td>1st July Coverage Exercise book verification</td>
+      </tr>
+      <tr>
+        <td>7 Term 2 week 1 workbooks to VP</td>
+          <td>8 Coverage</td>
+      </tr>
+      <tbody>
+  </table>
+</div>
+  <!--Footer-->
+  <div class="footer">
+    <div class="inner-footer">
+      <div class="logo-container">
+        <img src="images/logo.png">
+      </div>
+
+      <!--Footer-->
+      <div class="footer-third">
+        <h1></h1>
+      </div>
+
+      <div class="footer-third">
+        <h1>Navigation</h1>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Department</a>
+        <a href="programme.html">Programme</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+
+      <div class="footer-third">
+        <h1>Social Links</h1>
+        <li><a class="pink" href="https://m.facebook.com/profile.php?id=171033039654835"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="pink" href="http://www.education.gov.fj/"><i class="fa fa-book"></i></a></li>
+
+        <span>
+          JAI NARAYAN COLLEGE <br>
+          G.P.O Box 249, Suva <br>
+          161 Rewa Street, Suva <br>
+          Telephone: 3384-916/3381-705 <br>
+          Fax: 3384788 <br>
+          Mobile: 8336693 <br>
+          Email: jncollege@live.com
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--Javascript for Nav-bar-->
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+</body>
+</html>

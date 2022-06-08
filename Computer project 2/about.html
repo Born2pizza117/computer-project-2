@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Jai Narayan College | ABOUT</title>
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+</head>
+
+<style>
+   /*Global styles*/
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    background: rgb(75, 75, 75);
+  }
+
+  /*Nav-bar*/
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/image21.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*EventListener added by Javascript for the nav-bar*/
+  header.sticky .logo,
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  /*History*/
+  .container-1 {
+    height: 90%;
+    margin: 50px
+  }
+
+  .brief-history {
+    border: 2px solid black;
+    background-color: cornsilk;
+    padding: 20px;
+  }
+
+  .brief-history h1 {
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .brief-history p {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  /*Contact and Google Maps*/
+  .flex-container {
+    display: flex;
+    margin: 5%;
+  }
+
+  .flex-child {
+    background-color: cornsilk;
+    flex: 1;
+    border: 2px solid black;
+    padding: 20px;
+  }
+
+  .flex-child:first-child {
+    margin-right: 40px;
+  }
+
+  .flex-container .flex-child h1 {
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .flex-container .flex-child p {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  /*Footer*/
+  .footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    background-color: #181818;
+  }
+
+  .inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+  }
+
+  .inner-footer .logo-container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+  }
+
+  .inner-footer .logo-container img {
+    width: 60px;
+    height: auto;
+
+  }
+
+  .inner-footer .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+
+  .inner-footer .footer-third:last-child {
+    margin-right: 0;
+  }
+
+  .inner-footer .footer-third h1 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inner-footer .footer-third a {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .inner-footer .footer-third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .inner-footer .footer-third span {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+</style>
+
+<body>
+  <!--Navigation-->
+  <header>
+    <a href="/home.html" class="logo">Jai Narayan College</a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="department.html">Department</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </header>
+  <section class="banner"></section>
+
+  <!--brief history-->
+  <div class="container-1">
+    <div class="brief-history">
+      <h1>HISTORICAL BACKGROUND</h1>
+      <p class="text">One area in which the Fiji Indians have made great strides and can genuinely feel proud of their achievement t in the field of education.</p>
+
+      <p class="text">Like new immigrants, anywhere the Indians who decided to remain back in Fiji after completing their indenture were full of enthusiasm and zeal to do well in a new country. They had abandoned their homes and villages; endured a long and difficult sea journey to come to a new country. They had suffered all sorts of indignities and hardships and now as free settlers were determined to live a better life.</p>
+
+      <p class="text">So wherever they settled in Fiji, the education of their children became their first concern, By the end of the Second World War, primary education to a great extent was within the reach of the Indian children. The amount of sacrifice the Indian community made during the most difficult period of their existence in Fiji is a fine example of both self-help and community service.</p>
+
+      <p class="text">Besides Natabua Secondary School and Marist Brothers High School, there was no other high school, which admitted Indian children. These two schools then were very small and academically elitist. Only a few bright children could get admission
+      </p>
+
+      <p class="text">Until now however, the indian community had not felt any compulsion to build high schools. Perhaps there was no demand for it or perhaps the scarcity of funds or unavailability of suitable qualified teachers were the main constraints.</p>
+
+      <p class="text">But this situation changed with the change in the economic positions of the people. The demand for secondary education arose with the rise in the standard of living. The community teaders in several places started thinking about starting secondary schools, In 1949, Ram Krishan Mission set a prececent by laying the foundation of Shiri Vivekanand High School in Nadi</p>
+
+      <p class="text">Methodist Mission already had started Letean Memorial High School in Nausori.</p>
+
+      <p class="text">
+        In 1951, in Suva, a group of indian people met and revived the Indian Association of Fiji, which was formed in 1928 with Mr. AD Patel as its first President. Over the years, however, due to a lack of under-achievement, the Association had becoine inactive.
+      </p>
+
+      <p class="text">
+        One of the most influential members of the Association was Mr. Han Charan. He had been the Principal of Natabua Secondary School during the War and after his retirement had set up a law practice in Suva. It was he who persuaded the members of the Association to build a secondary school in The classes began in League Hall in Toorak with Ram Harakh Bechan as its first Principal Mr. Bechan did not stay in the position for long. He resigned and joined the Customs and later rose to the position of Controller of Customs before retiring.
+      </p>
+
+      <p class="text">
+        The school moved to its present site on Rewa Street where a new school had been built on ten acre of crown land acquired from the government in 1953.
+      </p>
+
+      <p class="text">
+        For two years, both the Primary and Secondary classes were housed in the same building. In 1956, Deenbandhu Primary School was built and the Primary classes moved to that school.
+      </p>
+
+      <p class="text">
+        After Mr. Bechan, Mr. Gopal Bhai Patel had become the Principal of the school. Except for being absent for a year, he remained the Head of the school till 1962. He resigned to accept the position of Principal at the M G M High School. After Mr. Patel, M Dass, Hari Charan and A 2 Shah served as principals and made their contributions. At the end of 1969, Mr. Jai Narayan was called upon to manage the school. He remained in the position until 1996, when Mr. Anoop Kumar succeeded him, Mr. Narayan was recalled to take up the leadership position again when Mr. Kumar resigned to take up an administrative position at the Figi School of Medicine. This ary schools in the country during Mr. Narayan's school achieved pre-eminence amongst the secondary so time. He has been instrumental in giving the school an intellectual impe awes ich af making the Indian College a center of academic excellence. The Indian College o us and succeeded in its success to Mr. Narayan. Mr. Narayan has been the moving spirit behind most of its achievements. He continued as a Princips this time for about two years. Mr.Gulab Singh. replaced him when he finally resigned and become the Manager of the school
+      </p>
+
+      <p class="text">
+        The historical background of the Indian College would be incomplete unless the names of the members who have given life long service to the Indian College are mentioned. These people owe to them The ve richly deserve our grateful remembrance and honest recognition of debt we names such as B. B. 5. Mel, C. P Bidesi, R. S. Bansraj. V. D. Patel, Handayal Singh, Rajendra Bides, Leladhar Pala. Kupswami, Babu Nandan Bhim, Andrew Decke, Abdul Lateef and D. N. Patel are closely associated with the Indian Association and the Indian College. The founder members Mr. Abdul Lateef and Mr. Daya Bhai Patel are still with us. Mr. Lateef has been the President of the Indian Association for more than thirty-five years and has also served as the chairman of the Board of Governors for a very long time. Mr. DN Patel had been the Chairman of the and the Manager of the school for many years. Looking back it seems that the Indian Community was fortunate in having exceptional the time was conducive to the rise of a number of people amongst them, who when confronted with the challenge, rose to the occasion. true leaders who worked sincerely and selflessly for the betterment of the community, they have indeed left an indelible mark behind.
+      </p>
+
+      <p class="text">
+        In the past, the Indian College was fortunate in having teachers who worked with great committment and interest and made positive contributions towards its development. Many past students of the school would certainly look back with gratitude at the teachers wor touched their hearts and minds and left lasting impressions on them.
+      </p>
+
+      <p class="text">
+        Some of the names of which the students would fondly recall are R Lockau, 15 Water, Subrammanum, Pritam Singh, Gondora, Geetbala Shandil, Jurg Bahadhur, Urmila Kumar, and Mrs. Ann Simpson. 
+      </p>
+
+      <p class="text">
+        The school accepted the idea of six years of primary and six years of secondary education and made provision for starting classes for Forms one a nd two in 1972. It has been found that the students have achieved much by being prepared in Forms 1 and 2 for further education than students coming directly from Class Eight of primary school
+      </p>
+
+      <p class="text">
+        The Indian College w was amongst the first secondary schools in the country to start Form sevent classes. It has been able to attract some very successful teachers and now it has three well established Form seven classes and the school results in Form seven examination have been. amongst the best in the country.
+      </p>
+
+      <p class="text">
+        The school is always ready to adopt new methods of teaching and achieve better outcome with the resources it has. Last year, it became the first school in the country to begin regular Saturday Math and English Language classes for all the students living in Suva area. These classes have been very popular and are expected to become a prominent and inseparable feature of the school. To improve effectiveness, further, planning ment several other strategies is in the pipeline. The Indian College is now truly poised t er the future with programs that would provide high quality education that would fully meet the demands of the community.
+      </p>
+    </div>
+  </div>
+  <!--Contact information and google maps-->
+  <div class="flex-container">
+    <div class="flex-child">
+      <h1>Contact</h1>
+      <p>
+        JAI NARAYAN COLLEGE <br>
+        G.P.O Box 249, Suva <br>
+        161 Rewa Street, Suva <br>
+        Telephone: 3384-916/3381-705 <br>
+        Fax: 3384788 <br>
+        Mobile: 8336693 <br>
+        Email: jncollege@live.com
+      </p>
+    </div>
+    <div class="flex-child">
+      <h1>Location</h1>
+      <div class="map-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15166.531985056621!2d178.4405942!3d-18.1347316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcbafe679ae5ab95!2sJai%20Narayan%20College!5e0!3m2!1sen!2sfj!4v1650792252626!5m2!1sen!2sfj" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="inner-footer">
+      <div class="logo-container">
+        <img src="images/logo.png">
+      </div>
+
+      <!--Footer-->
+      <div class="footer-third">
+        <h1></h1>
+      </div>
+
+      <div class="footer-third">
+        <h1>Navigation</h1>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Department</a>
+        <a href="programme.html">Programme</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+
+      <div class="footer-third">
+        <h1>Social Links</h1>
+        <li><a href="https://m.facebook.com/profile.php?id=171033039654835"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://www.education.gov.fj/"><i class="fa fa-book"></i></a></li>
+
+        <span>
+          JAI NARAYAN COLLEGE <br>
+        G.P.O Box 249, Suva <br>
+        161 Rewa Street, Suva <br>
+        Telephone: 3384-916/3381-705 <br>
+        Fax: 3384788 <br>
+        Mobile: 8336693 <br>
+        Email: jncollege@live.com
+        </span>
+      </div>
+    </div>
+  </div>
+
+<!--Javascript for Nav-bar-->
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+</body>
+
+</html>
